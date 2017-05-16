@@ -17,8 +17,8 @@ app.use(express.static('./public'));
 
 // TODO: Write a new route that will handle a request and send the new.html file back to the user
 app.get('/form', function(req, res) {
-    console.log('form page');
-    res.sendFile('public/new.html', {root: './public'});
+  console.log('form page');
+  res.sendFile('/new.html', {root: './public'});
 })
 
 app.post('/articles', bodyParser, function(request, response) {
